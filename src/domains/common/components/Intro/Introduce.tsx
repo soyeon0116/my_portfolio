@@ -9,7 +9,7 @@ export default function Introduce() {
       className="relative bg-[url('/images/main.jpg')] bg-cover bg-center h-[500px]"
     >
       <div className='absolute inset-0 bg-[#00000080]' />
-      <section className='relative top-[30px] z-10 flex flex-col gap-4 items-center text-white text-center'>
+      <section className='relative top-[30%] z-10 flex flex-col gap-4 items-center text-white text-center'>
         <h1 className='text-5xl font-bold'>김소연의 포트폴리오</h1>
         <p className='text-xl'>
           안녕하세요.
