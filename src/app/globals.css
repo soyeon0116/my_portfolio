@@ -22,5 +22,6 @@ html {
 }
 section {
   width: 80%;
-  margin: 0 auto;
+  margin: 0px auto;
+  padding: 20px 0;
 }
