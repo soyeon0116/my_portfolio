@@ -1,11 +1,11 @@
-import MainLeftWrap from '@/domains/main/components/MainLeftWrap';
-import MainRightWrap from '@/domains/main/components/MainRightWrap';
+import AboutMe from '@/domains/common/components/aboutMe/AboutMe';
+import Introduce from '@/domains/common/components/Intro/Introduce';
 
 export default function Home() {
   return (
     <>
-      <MainLeftWrap />
-      <MainRightWrap />
+      <Introduce />
+      <AboutMe />
     </>
   );
 }
