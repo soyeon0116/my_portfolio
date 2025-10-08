@@ -7,7 +7,7 @@ export default function Header() {
       <nav className='flex gap-4 font-semibold'>
         <a href='#aboutMe'>About Me</a>
         <a href='#career'>Career</a>
-        <a href='#project'>Project</a>
+        <a href='#projects'>Projects</a>
       </nav>
     </div>
   );
