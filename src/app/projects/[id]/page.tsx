@@ -17,8 +17,8 @@ export default function Page({ params }: { params: Promise<{ id: string }> }) {
   }
 
   return (
-    <div className='fixed inset-0 bg-[#0000007a] flex items-center justify-center z-50'>
-      <div className='bg-white p-6 rounded-lg w-[600px] max-w-full relative'>
+    <div>
+      <div className='p-6 w-[600px] mt-[5%] ml-[50%] -translate-x-[50%]'>
         <button
           onClick={() => router.back()}
           className='absolute top-0 right-0 px-4 py-2 cursor-pointer'

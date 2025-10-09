@@ -33,6 +33,7 @@ export default function RootLayout({
         <Header />
         <div className='mt-[48px] h-[calc(100vh-48px)]'>{children}</div>
         {modal}
+        <div id='modalRoot'></div>
       </body>
     </html>
   );
