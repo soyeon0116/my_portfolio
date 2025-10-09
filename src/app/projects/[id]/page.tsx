@@ -17,48 +17,46 @@ export default function Page({ params }: { params: Promise<{ id: string }> }) {
   }
 
   return (
-    <div>
-      <div className='p-6 w-[600px] mt-[5%] ml-[50%] -translate-x-[50%]'>
-        <button
-          onClick={() => router.back()}
-          className='absolute top-0 right-0 px-4 py-2 cursor-pointer'
-        >
-          <IoMdClose />
-        </button>
-        <h2 className='text-2xl font-bold mb-4'>{project.title} 상세 내용</h2>
-        <div>
-          <ul className='border-b border-gray-300 flex gap-3'>
-            {project.pages.map((page) => (
-              <li
-                key={page.name}
-                className={`px-2 py-1 inline-block cursor-pointer ${
-                  selected === page.name ? 'bg-gray-300 rounded-t-sm' : ''
-                }`}
-                onClick={() => setSelected(page.name)}
-              >
-                {page.name}
-              </li>
-            ))}
-          </ul>
-          {selectedPage && <ProjectDetail datas={selectedPage} />}
-          <div className='flex gap-2 mt-2'>
-            <a
-              href={project.github}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='border-1 border-gray-500 rounded-sm font-semibold inline-block px-2 py-1 cursor-pointer hover:bg-gray-500 hover:text-white'
+    <div className='p-6'>
+      <button
+        onClick={() => router.back()}
+        className='absolute top-0 right-0 px-4 py-2 cursor-pointer'
+      >
+        <IoMdClose />
+      </button>
+      <h2 className='text-2xl font-bold mb-4'>{project.title} 상세 내용</h2>
+      <div>
+        <ul className='border-b border-gray-300 flex gap-3'>
+          {project.pages.map((page) => (
+            <li
+              key={page.name}
+              className={`px-2 py-1 inline-block cursor-pointer ${
+                selected === page.name ? 'bg-gray-300 rounded-t-sm' : ''
+              }`}
+              onClick={() => setSelected(page.name)}
             >
-              Github
-            </a>
-            <a
-              href={project.demo}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='border-1 border-gray-500 rounded-sm font-semibold inline-block px-2 py-1 cursor-pointer hover:bg-gray-500 hover:text-white'
-            >
-              Demo
-            </a>
-          </div>
+              {page.name}
+            </li>
+          ))}
+        </ul>
+        {selectedPage && <ProjectDetail datas={selectedPage} />}
+        <div className='flex gap-2 mt-2'>
+          <a
+            href={project.github}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='border-1 border-gray-500 rounded-sm font-semibold inline-block px-2 py-1 cursor-pointer hover:bg-gray-500 hover:text-white'
+          >
+            Github
+          </a>
+          <a
+            href={project.demo}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='border-1 border-gray-500 rounded-sm font-semibold inline-block px-2 py-1 cursor-pointer hover:bg-gray-500 hover:text-white'
+          >
+            Demo
+          </a>
         </div>
       </div>
     </div>

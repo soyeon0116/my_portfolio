@@ -26,7 +26,7 @@ export default function Modal({ children }: { children: React.ReactNode }) {
         }
       }}
       onClose={() => router.back()}
-      className='backdrop:bg-[#0000007a] w-[600px] min-h-[750px] p-6 rounded-lg z-50 mt-[5%] ml-[50%] -translate-x-[50%]'
+      className='backdrop:bg-[#0000007a] w-[600px] min-h-[750px] rounded-lg z-50 mt-[5%] ml-[50%] -translate-x-[50%]'
     >
       {children}
     </dialog>,
