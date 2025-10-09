@@ -31,7 +31,11 @@ export default function ProjectCard({
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >
-        <Link href={href} className={`text-2xl font-bold ${colorClass}`}>
+        <Link
+          href={href}
+          scroll={false}
+          className={`text-2xl font-bold ${colorClass}`}
+        >
           {title}
         </Link>
         {hovered && (

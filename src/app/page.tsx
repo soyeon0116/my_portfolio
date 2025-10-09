@@ -2,6 +2,7 @@ import AboutMe from '@/domains/common/components/aboutMe/AboutMe';
 import Career from '@/domains/common/components/career.tsx/Career';
 import Footer from '@/domains/common/components/Footer';
 import Introduce from '@/domains/common/components/Intro/Introduce';
+import Projects from '@/domains/common/components/projects/Projects';
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       <Introduce />
       <AboutMe />
       <Career />
-
+      <Projects />
       <Footer />
     </>
   );
